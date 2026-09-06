@@ -26,6 +26,30 @@ interface BlogPost {
   seo_description?: string;
 }
 
+// Extract FAQ items from markdown content for AEO (Answer Engine Optimization)
+function extractFaqsFromContent(content: string) {
+  const faqs: Array<{ question: string; answer: string }> = [];
+  const faqSectionMatch = content.match(/##\s*(?:[0-9]+\.\s*)?Frequently Asked Questions[^\n]*\n([\s\S]*?)(?:\n##\s|$)/i);
+  if (faqSectionMatch && faqSectionMatch[1]) {
+    const faqBody = faqSectionMatch[1];
+    const qMatches = Array.from(faqBody.matchAll(/###\s*([^\n?]+\??)\n+([\s\S]*?)(?=(?:\n###|\s*$))/g));
+    for (const match of qMatches) {
+      const question = match[1].trim();
+      const rawAnswer = match[2].trim();
+      const cleanAnswer = rawAnswer
+        .replace(/<[^>]*>/g, '')
+        .replace(/\*\*([^*]+)\*\*/g, '$1')
+        .replace(/`([^`]+)`/g, '$1')
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+        .replace(/\n+/g, ' ');
+      if (question && cleanAnswer) {
+        faqs.push({ question, answer: cleanAnswer });
+      }
+    }
+  }
+  return faqs;
+}
+
 export async function generateMetadata({ params }: { params: { locale: string, slug: string } }): Promise<Metadata> {
   const post = await getBlogPostBySlug(params.slug, params.locale.split('-')[0]) as BlogPost | null;
   if (!post) return {};
@@ -33,7 +57,7 @@ export async function generateMetadata({ params }: { params: { locale: string, s
   const baseUrl = 'https://resumeforgeai.in';
   const canonicalUrl = `${baseUrl}/${params.locale}/blogs/${params.slug}`;
 
-  // Region-locale mapping for multilingual SEO alternates
+  // Region-locale mapping for multilingual Geo-SEO alternates
   const languages: Record<string, string> = {
     'x-default': `${baseUrl}/en-in/blogs/${params.slug}`,
     'en-in': `${baseUrl}/en-in/blogs/${params.slug}`,
@@ -49,9 +73,55 @@ export async function generateMetadata({ params }: { params: { locale: string, s
     'de-eu': `${baseUrl}/de-eu/blogs/${params.slug}`,
   };
 
+  const region = params.locale.split('-')[1]?.toUpperCase() || 'IN';
+  const geoPlacename = region === 'IN' ? 'India' : region === 'US' ? 'United States' : 'Europe';
+
+  // Dynamic Keyword Extraction for SEO / AEO / GEO
+  const defaultKeywords = [
+    'ResumeForge AI', 'AI Career Platform', 'AI Resume Builder', 'ATS Resume Optimization'
+  ];
+
+  const slugKeywordsMap: Record<string, string[]> = {
+    'gpt-6-astra-openai-agentic-frontier': [
+      'GPT-6 Astra', 'OpenAI GPT-6', 'GPT-6 release date', 'GPT-6 architecture',
+      'autonomous AI agents', 'native computer use', 'SWE-bench verified',
+      'OpenAI preparedness framework critical', 'test-time compute scaling',
+      'system-2 reasoning', 'AI cybersecurity model', 'agentic workflow automation',
+      'future of software engineering', 'AI career impact 2026', 'autonomous coding agents'
+    ],
+    'cursor-origin-github-ai-code-hosting': [
+      'Cursor Origin', 'Cursor AI', 'GitHub competitor', 'AI code hosting',
+      'agentic Git repository', 'developer tooling', 'AI pair programming'
+    ],
+    'skyroot-india-first-private-rocket-research': [
+      'Skyroot Aerospace', 'Vikram-1', 'India private space tech', 'ISRO private partnership',
+      'aerospace engineering careers', 'Indian spacetech startups'
+    ]
+  };
+
+  const keywords = [...(slugKeywordsMap[params.slug] || [post.title]), ...defaultKeywords];
+  const ogImageUrl = post.cover_image?.startsWith('http') 
+    ? post.cover_image 
+    : `${baseUrl}${post.cover_image || '/og-blog.png'}`;
+
   return {
     title: `${post.title} | ResumeForgeAI`,
     description: post.seo_description,
+    keywords: keywords,
+    authors: [{ name: post.author, url: `${baseUrl}/${params.locale}/blogs` }],
+    creator: post.author,
+    publisher: 'ResumeForgeAI',
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
     alternates: {
       canonical: canonicalUrl,
       languages,
@@ -59,16 +129,37 @@ export async function generateMetadata({ params }: { params: { locale: string, s
     openGraph: {
       title: post.title,
       description: post.seo_description,
+      url: canonicalUrl,
+      siteName: 'ResumeForgeAI',
+      locale: params.locale.replace('-', '_'),
       type: 'article',
-      images: [post.cover_image || '/og-blog.png'],
-      authors: [post.author],
       publishedTime: post.published_at,
+      authors: [post.author],
+      tags: keywords,
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 1200,
+          alt: post.title,
+        }
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.seo_description,
-      images: [post.cover_image || '/og-blog.png'],
+      creator: '@ResumeForgeAI',
+      images: [ogImageUrl],
+    },
+    other: {
+      'geo.region': region,
+      'geo.placename': geoPlacename,
+      'news_keywords': keywords.slice(0, 10).join(', '),
+      'article:published_time': post.published_at,
+      'article:author': post.author,
+      'article:section': 'Technology',
+      'article:tag': keywords.join(', '),
     }
   };
 }
@@ -79,29 +170,125 @@ export default async function BlogPostPage({ params }: { params: { locale: strin
   
   if (!post) notFound();
 
+  const baseUrl = 'https://resumeforgeai.in';
+  const pageUrl = `${baseUrl}/${locale}/blogs/${slug}`;
+  const coverUrl = post.cover_image?.startsWith('http') 
+    ? post.cover_image 
+    : `${baseUrl}${post.cover_image || '/og-blog.png'}`;
+
+  // Extract FAQs for AEO (Answer Engine Optimization)
+  const faqs = extractFaqsFromContent(post.content || '');
+
+  // High-authority entity anchors for GEO (Generative Engine Optimization)
+  const entityKeywordsMap: Record<string, Array<{ name: string; sameAs?: string }>> = {
+    'gpt-6-astra-openai-agentic-frontier': [
+      { name: 'OpenAI', sameAs: 'https://en.wikipedia.org/wiki/OpenAI' },
+      { name: 'GPT-6 Astra' },
+      { name: 'Autonomous Agent', sameAs: 'https://en.wikipedia.org/wiki/Intelligent_agent' },
+      { name: 'Artificial Intelligence', sameAs: 'https://en.wikipedia.org/wiki/Artificial_intelligence' },
+      { name: 'Computer Security', sameAs: 'https://en.wikipedia.org/wiki/Computer_security' },
+      { name: 'Software Engineering', sameAs: 'https://en.wikipedia.org/wiki/Software_engineering' }
+    ]
+  };
+
+  const entities = entityKeywordsMap[slug] || [
+    { name: 'Artificial Intelligence' },
+    { name: 'Career Development' },
+    { name: 'ResumeForgeAI' }
+  ];
+
+  // Comprehensive JSON-LD @graph powering SEO, AEO, and GEO
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": post.title,
-    "description": post.seo_description,
-    "image": post.cover_image ? `https://resumeforgeai.in${post.cover_image}` : 'https://resumeforgeai.in/og-blog.png',
-    "datePublished": post.published_at,
-    "author": {
-      "@type": "Person",
-      "name": post.author
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "ResumeForgeAI",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://resumeforgeai.in/favicon.ico"
-      }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": `https://resumeforgeai.in/${locale}/blogs/${slug}`
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${baseUrl}/#website`,
+        "url": baseUrl,
+        "name": "ResumeForgeAI",
+        "description": "Next-Gen AI Career Operating System & Resume Builder"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${pageUrl}#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": `${baseUrl}/${locale}`
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": `${baseUrl}/${locale}/blogs`
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": post.title,
+            "item": pageUrl
+          }
+        ]
+      },
+      {
+        "@type": "TechArticle",
+        "@id": `${pageUrl}#article`,
+        "headline": post.title,
+        "description": post.seo_description,
+        "image": [coverUrl],
+        "datePublished": post.published_at,
+        "dateModified": post.published_at,
+        "inLanguage": locale,
+        "author": {
+          "@type": "Person",
+          "name": post.author,
+          "url": `${baseUrl}/${locale}/blogs`
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "ResumeForgeAI",
+          "url": baseUrl,
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${baseUrl}/favicon.ico`
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": pageUrl
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", ".prose > p:first-of-type"]
+        },
+        "about": entities.map(e => ({
+          "@type": "Thing",
+          "name": e.name,
+          ...(e.sameAs ? { "sameAs": e.sameAs } : {})
+        })),
+        "mentions": [
+          { "@type": "Thing", "name": "SWE-bench" },
+          { "@type": "Thing", "name": "Computer Use" },
+          { "@type": "Thing", "name": "Test-Time Compute" }
+        ]
+      },
+      ...(faqs.length > 0 ? [
+        {
+          "@type": "FAQPage",
+          "@id": `${pageUrl}#faq`,
+          "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.answer
+            }
+          }))
+        }
+      ] : [])
+    ]
   };
 
   return (
