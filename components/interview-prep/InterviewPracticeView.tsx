@@ -4,7 +4,7 @@ import { useState } from 'react';
 import {
     Mic, MicOff, Send, MessageSquare,
     Zap, RotateCcw, Trophy,
-    ShieldHalf, Loader2, Award} from 'lucide-react';
+    ShieldHalf, Loader2, Award} from '@/components/icons';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface PracticeProps {

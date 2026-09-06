@@ -14,7 +14,7 @@ import {
     ChevronRight,
     Loader2,
     Database
-, Lightbulb } from 'lucide-react';
+, Lightbulb } from '@/components/icons';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';

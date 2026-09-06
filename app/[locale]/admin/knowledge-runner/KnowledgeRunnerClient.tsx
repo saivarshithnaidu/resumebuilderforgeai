@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { BookOpen, Plus, Play, Trash2, FileText, GraduationCap, Search, Clock } from 'lucide-react';
+import { BookOpen, Plus, Play, Trash2, FileText, GraduationCap, Search, Clock } from '@/components/icons';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Card } from '@/components/ui/Card';

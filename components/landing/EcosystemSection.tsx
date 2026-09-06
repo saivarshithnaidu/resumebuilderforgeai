@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Database, Code, Brain, Map, Search, Globe, Rocket, BookOpen } from "lucide-react";
+import { Database, Code, Brain, Map, Search, Globe, Rocket, BookOpen } from "@/components/icons";
 
 const modules = [
   { name: "ResumeForge", icon: <Database />, color: "bg-blue-500/20 text-blue-400" },

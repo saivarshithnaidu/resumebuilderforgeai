@@ -7,7 +7,7 @@ import {
     Loader2, RotateCcw,
     Code2, BarChart3, Zap, Mic, Trophy,
     Send, Star, Play, ClipboardList
-} from 'lucide-react';
+} from '@/components/icons';
 import Link from 'next/link';
 import { useTranslation } from '@/lib/i18n/I18nProvider';
 import { motion, AnimatePresence } from 'framer-motion';

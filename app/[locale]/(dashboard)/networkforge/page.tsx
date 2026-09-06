@@ -16,7 +16,7 @@ import {
     Search,
     Globe,
     ExternalLink
-, Wand2 } from 'lucide-react';
+, Wand2 } from '@/components/icons';
 import { useParams } from 'next/navigation';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';

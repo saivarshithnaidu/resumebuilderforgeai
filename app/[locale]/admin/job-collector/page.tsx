@@ -1,7 +1,7 @@
 export const dynamic = 'force-dynamic';
 import { createAdminClient } from '@/lib/supabase/admin';
 import JobCollectorClient from './client-page';
-import { Target } from 'lucide-react';
+import { Target } from '@/components/icons';
 
 export default async function JobCollectorAdminPage() {
     const supabase = createAdminClient();

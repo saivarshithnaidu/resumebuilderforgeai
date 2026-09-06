@@ -15,7 +15,7 @@ import {
     EyeOff,
     Info,
     Lock
-} from 'lucide-react';
+} from '@/components/icons';
 import { toast } from 'react-hot-toast';
 import { Badge } from '@/components/ui/Badge';
 

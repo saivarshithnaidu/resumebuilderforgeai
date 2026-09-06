@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { PortfolioData } from '@/types/portfolio';
-import { Github, ExternalLink, Mail, Phone, Linkedin, Download, Moon, Sun } from 'lucide-react';
+import { Github, ExternalLink, Mail, Phone, Linkedin, Download, Moon, Sun } from '@/components/icons';
 
 interface Props { data: PortfolioData; watermark?: boolean; }
 

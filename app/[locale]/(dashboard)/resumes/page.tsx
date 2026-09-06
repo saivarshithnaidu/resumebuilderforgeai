@@ -1,6 +1,6 @@
 export const dynamic = 'force-dynamic';
 import { ResumeCard } from '@/components/dashboard/resume-card'
-import { FileText, ChevronLeft, ChevronRight, HelpCircle } from 'lucide-react'
+import { FileText, ChevronLeft, ChevronRight, HelpCircle } from '@/components/icons'
 import { createClient } from '@/lib/supabase/server'
 import { CreateResumeButton } from '@/components/dashboard/create-resume-button'
 import { getSession } from '@/lib/auth/jwt'

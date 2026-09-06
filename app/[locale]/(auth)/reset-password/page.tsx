@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic';
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Lock, ArrowLeft, Loader2, AlertCircle, CheckCircle2 } from 'lucide-react'
+import { Lock, ArrowLeft, Loader2, AlertCircle, CheckCircle2 } from '@/components/icons'
 
 export default function ResetPasswordPage({
     searchParams,

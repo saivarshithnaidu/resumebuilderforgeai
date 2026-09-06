@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { getKnowledgeCategories } from '@/lib/seo-service';
-import { ChevronRight, BookOpen, GraduationCap, Code } from 'lucide-react';
+import { ChevronRight, BookOpen, GraduationCap, Code } from '@/components/icons';
 import { FeatureGate } from '@/components/pricing/FeatureGate';
 
 export async function generateMetadata(): Promise<Metadata> {

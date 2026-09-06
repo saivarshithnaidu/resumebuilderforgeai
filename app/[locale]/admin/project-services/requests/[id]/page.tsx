@@ -7,7 +7,7 @@ import {
   DollarSign, CheckCircle2, MessageSquare, Clock, ShieldAlert,
   Info, Users, BookOpen, ExternalLink, RefreshCw, Mail, Phone,
   MessageCircle, Plus, Trash2, Edit2, AlertCircle, Sparkles, Code
-} from 'lucide-react';
+} from '@/components/icons';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { Textarea } from '@/components/ui/textarea';

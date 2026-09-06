@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getKnowledgeCategoryBySlug, getKnowledgeTopicsByCategory } from '@/lib/seo-service';
-import { ChevronRight, ArrowLeft } from 'lucide-react';
+import { ChevronRight, ArrowLeft } from '@/components/icons';
 
 export async function generateMetadata({ params }: { params: { locale: string, category: string } }): Promise<Metadata> {
   const category = await getKnowledgeCategoryBySlug(params.category);

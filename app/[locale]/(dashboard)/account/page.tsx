@@ -8,7 +8,7 @@ import {
     Lock,
     Settings,
     Briefcase, Edit, Phone, Linkedin, Github, Globe
-} from 'lucide-react';
+} from '@/components/icons';
 import Link from 'next/link';
 import { format } from 'date-fns';
 import { Card } from '@/components/ui/Card';

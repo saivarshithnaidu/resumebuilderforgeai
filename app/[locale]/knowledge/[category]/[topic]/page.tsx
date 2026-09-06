@@ -7,7 +7,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { BookOpen, Code, HelpCircle, Link as LinkIcon, Share2 } from 'lucide-react';
+import { BookOpen, Code, HelpCircle, Link as LinkIcon, Share2 } from '@/components/icons';
 
 interface KnowledgeExample {
   id: string;

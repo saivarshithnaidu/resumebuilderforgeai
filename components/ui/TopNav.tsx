@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Bell, Search, User, LogOut, ChevronRight, Menu } from "lucide-react";
+import { Bell, Search, User, LogOut, ChevronRight, Menu } from "@/components/icons";
 import { Button } from "./Button";
 import {
   DropdownMenu,

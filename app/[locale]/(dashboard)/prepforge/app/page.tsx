@@ -19,7 +19,7 @@ import {
     Divide,
     Hash,
     Maximize
-} from 'lucide-react';
+} from '@/components/icons';
 import Link from 'next/link';
 import { useParams, useSearchParams } from 'next/navigation';
 import { Card } from '@/components/ui/Card';

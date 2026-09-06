@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Bot, CheckCircle2, Rocket, Users, ShieldCheck, Zap, Briefcase } from 'lucide-react';
+import { Bot, CheckCircle2, Rocket, Users, ShieldCheck, Zap, Briefcase } from '@/components/icons';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import Image from 'next/image';

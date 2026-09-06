@@ -15,7 +15,7 @@ import {
     Calendar,
     ArrowUpRight,
     ArrowDownRight,
-} from 'lucide-react';
+} from '@/components/icons';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 

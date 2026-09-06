@@ -1,6 +1,6 @@
 export const dynamic = 'force-dynamic';
 import { createAdminClient } from '@/lib/supabase/admin';
-import { Download, Calendar, FileText, Shield, RefreshCw } from 'lucide-react';
+import { Download, Calendar, FileText, Shield, RefreshCw } from '@/components/icons';
 
 interface DownloadLog {
     id: string;

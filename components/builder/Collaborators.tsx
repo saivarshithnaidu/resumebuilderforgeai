@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { createClient } from '@/lib/supabase/client';
-import { Users } from 'lucide-react';
+import { Users } from '@/components/icons';
 import { cn } from '@/lib/utils';
 
 interface Collaborator {

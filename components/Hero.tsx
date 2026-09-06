@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, FileText, Brain, Search, Wand2} from 'lucide-react';
+import { ArrowRight, FileText, Brain, Search, Wand2} from '@/components/icons';
 import {
   DEFAULT_LOCALE,
   fadeInScale,

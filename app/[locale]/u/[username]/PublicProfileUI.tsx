@@ -1,6 +1,6 @@
 'use client';
 
-import { MapPin, Link as LinkIcon, Briefcase, Code, Share2 } from 'lucide-react';
+import { MapPin, Link as LinkIcon, Briefcase, Code, Share2 } from '@/components/icons';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';

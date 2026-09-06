@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { Download, X } from 'lucide-react';
+import { Download, X } from '@/components/icons';
 
 interface BeforeInstallPromptEvent extends Event {
     prompt: () => Promise<void>;

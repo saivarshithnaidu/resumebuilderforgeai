@@ -15,7 +15,7 @@ import {
     Code2,
     Bug,
     Layout
-, Lightbulb } from 'lucide-react';
+, Lightbulb } from '@/components/icons';
 
 interface QuestionStatsItem {
     type?: string;

@@ -8,7 +8,7 @@ import {
     Loader2, History, RotateCcw,
     BookOpen, Brain, Compass,
     MessageSquare, ArrowRight
-} from 'lucide-react';
+} from '@/components/icons';
 import ReactMarkdown from 'react-markdown';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';

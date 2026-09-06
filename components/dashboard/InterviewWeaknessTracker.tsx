@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import {
     BarChart3, TrendingUp, AlertCircle, CheckCircle2,
     ChevronRight, Zap, Target, Brain, MessageSquare, Loader2
-} from 'lucide-react';
+} from '@/components/icons';
 import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';

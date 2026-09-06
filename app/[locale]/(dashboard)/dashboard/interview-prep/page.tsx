@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic';
 ;
 
 import { useState } from 'react';
-import { ShieldCheck, Building2, Briefcase, Zap, Loader2, ArrowRight } from 'lucide-react';
+import { ShieldCheck, Building2, Briefcase, Zap, Loader2, ArrowRight } from '@/components/icons';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useParams } from 'next/navigation';

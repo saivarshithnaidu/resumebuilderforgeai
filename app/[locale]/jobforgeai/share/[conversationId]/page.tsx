@@ -1,4 +1,4 @@
-import { ShieldAlert, User as UserIcon, MessageSquare, ExternalLink } from 'lucide-react';
+import { ShieldAlert, User as UserIcon, MessageSquare, ExternalLink } from '@/components/icons';
 import { createClient } from '@supabase/supabase-js';
 import Link from 'next/link';
 

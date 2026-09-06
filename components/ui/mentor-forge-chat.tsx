@@ -13,7 +13,7 @@ import {
   Paperclip,
   PlusIcon,
   Bot
-} from "lucide-react";
+} from "@/components/icons";
 
 interface UseAutoResizeTextareaProps {
   minHeight: number;

@@ -13,7 +13,7 @@ import {
     Info,
     Loader2,
     Terminal
-, Wand2 } from 'lucide-react';
+, Wand2 } from '@/components/icons';
 
 import FileTree from '@/components/projectforge/FileTree';
 import CodeViewer from '@/components/projectforge/CodeViewer';

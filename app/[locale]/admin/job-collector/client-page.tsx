@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Play, Loader2, Database, Zap, Search, RefreshCcw, MapPin, CheckCircle2, XCircle } from 'lucide-react';
+import { Play, Loader2, Database, Zap, Search, RefreshCcw, MapPin, CheckCircle2, XCircle } from '@/components/icons';
 
 interface StoredJob {
     id: string;

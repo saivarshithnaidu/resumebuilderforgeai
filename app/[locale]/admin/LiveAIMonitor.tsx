@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { MessageSquareWarning } from 'lucide-react';
+import { MessageSquareWarning } from '@/components/icons';
 import { createClient } from '@/lib/supabase/client';
 
 interface AIUsageUser {

@@ -2,7 +2,7 @@
 export const dynamic = 'force-dynamic';
 ;
 import { useState, useEffect } from 'react';
-import { LayoutTemplate, Loader2, Search, ExternalLink, Globe, GlobeLock, User, Calendar } from 'lucide-react';
+import { LayoutTemplate, Loader2, Search, ExternalLink, Globe, GlobeLock, User, Calendar } from '@/components/icons';
 import { formatDistanceToNow } from 'date-fns';
 import Link from 'next/link';
 

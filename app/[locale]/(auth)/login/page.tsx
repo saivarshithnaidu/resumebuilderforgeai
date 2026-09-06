@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic';
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter, useSearchParams, useParams } from 'next/navigation'
-import { LogIn, Loader2, AlertCircle } from 'lucide-react'
+import { LogIn, Loader2, AlertCircle } from '@/components/icons'
 import { OAuthButtons } from '@/components/auth/oauth-buttons'
 
 export default function LoginPage() {

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { Video, Camera, Play, Download, Trash2, Plus, GripVertical, Save, Upload, RefreshCcw , Wand2 } from 'lucide-react';
+import { Video, Camera, Play, Download, Trash2, Plus, GripVertical, Save, Upload, RefreshCcw , Wand2 } from '@/components/icons';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Card } from '@/components/ui/Card';

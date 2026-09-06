@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 
-import { PlusCircle, Loader2 } from 'lucide-react'
+import { PlusCircle, Loader2 } from '@/components/icons'
 import { Button } from '@/components/ui/Button'
 
 export function CreateResumeButton({ variant = 'primary' }: { variant?: 'primary' | 'secondary' }) {

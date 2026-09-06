@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic';
 
 import { Suspense, useState } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
-import { Loader2, AlertCircle } from 'lucide-react';
+import { Loader2, AlertCircle } from '@/components/icons';
 
 const ERROR_MESSAGES: Record<string, string> = {
     PhoneRequired: 'Please enter your phone number.',

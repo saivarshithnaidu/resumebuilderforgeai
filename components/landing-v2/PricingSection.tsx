@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Check } from "lucide-react";
+import { Check } from "@/components/icons";
 import Link from "next/link";
 
 const ease = [0.16, 1, 0.3, 1] as const;

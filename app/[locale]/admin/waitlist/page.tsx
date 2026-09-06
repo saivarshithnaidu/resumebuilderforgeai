@@ -15,7 +15,7 @@ import {
     Loader2,
     Phone,
     Ticket
-} from 'lucide-react';
+} from '@/components/icons';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 

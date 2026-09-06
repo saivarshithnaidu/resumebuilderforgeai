@@ -1,6 +1,6 @@
 'use client';
 import { PortfolioData } from '@/types/portfolio';
-import { Github, ExternalLink, Mail, Linkedin, Globe, Phone, Award, Download } from 'lucide-react';
+import { Github, ExternalLink, Mail, Linkedin, Globe, Phone, Award, Download } from '@/components/icons';
 
 interface Props { data: PortfolioData; watermark?: boolean; }
 

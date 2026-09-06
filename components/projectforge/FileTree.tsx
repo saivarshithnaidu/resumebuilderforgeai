@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Folder, FileCode, ChevronRight, ChevronDown } from 'lucide-react';
+import { Folder, FileCode, ChevronRight, ChevronDown } from '@/components/icons';
 
 interface FileTreeProps {
     files: Array<{ path: string; code: string }>;

@@ -1,6 +1,6 @@
 "use client";
 
-import { Zap, Target, Layout, BrainCircuit, MessageSquareWarning, Briefcase, Shield, Wand2} from 'lucide-react';
+import { Zap, Target, Layout, BrainCircuit, MessageSquareWarning, Briefcase, Shield, Wand2} from '@/components/icons';
 import { Card } from "@/components/ui/Card";
 
 interface FeatureGridProps {

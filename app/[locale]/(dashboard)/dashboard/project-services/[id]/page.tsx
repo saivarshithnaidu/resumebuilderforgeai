@@ -6,7 +6,7 @@ import {
   ArrowLeft, Loader2, Send, Upload, FileText, Download, Calendar, 
   DollarSign, CheckCircle2, MessageSquare, Clock, ShieldAlert,
   Menu, Info, Users, BookOpen, ExternalLink, RefreshCw, Check, Sparkles
-} from 'lucide-react';
+} from '@/components/icons';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { Textarea } from '@/components/ui/textarea';

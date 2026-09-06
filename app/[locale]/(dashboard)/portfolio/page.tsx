@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic';
 ;
 import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { Loader2, Globe, Eye, Copy, Check, Layout, ArrowLeft , Wand2 } from 'lucide-react';
+import { Loader2, Globe, Eye, Copy, Check, Layout, ArrowLeft , Wand2 } from '@/components/icons';
 import { FeatureGate } from '@/components/pricing/FeatureGate';
 import { Portfolio, PORTFOLIO_THEMES } from '@/types/portfolio';
 import Link from 'next/link';

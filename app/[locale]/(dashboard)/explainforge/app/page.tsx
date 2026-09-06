@@ -27,7 +27,7 @@ import {
     FolderOpen,
     FileLineChart,
     FileCode2
-, Lightbulb } from 'lucide-react';
+, Lightbulb } from '@/components/icons';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';

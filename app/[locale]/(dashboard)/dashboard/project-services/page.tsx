@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { 
   FileText, ClipboardCheck, Clock, CheckCircle2, ChevronRight, 
   HelpCircle, Eye, ArrowLeft, Loader2, Sparkles, FolderKanban, Plus
-} from 'lucide-react';
+} from '@/components/icons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';

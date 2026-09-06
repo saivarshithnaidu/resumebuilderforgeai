@@ -1,6 +1,6 @@
 "use client";
 
-import { Zap } from "lucide-react";
+import { Zap } from "@/components/icons";
 
 export default function ProductDemo() {
   return (

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Lock, Rocket } from 'lucide-react';
+import { Lock, Rocket } from '@/components/icons';
 import { motion } from 'framer-motion';
 
 interface ForgeSoftPaywallProps {

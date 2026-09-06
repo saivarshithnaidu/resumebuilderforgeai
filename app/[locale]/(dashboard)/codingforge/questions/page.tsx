@@ -13,7 +13,7 @@ import {
     Brain,
     Building2,
     CheckCircle2,
-} from 'lucide-react';
+} from '@/components/icons';
 import Link from 'next/link';
 
 interface Question {

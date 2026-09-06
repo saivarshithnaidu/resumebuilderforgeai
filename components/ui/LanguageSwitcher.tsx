@@ -3,7 +3,7 @@
 import React from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { useTranslation } from '@/lib/i18n/I18nProvider';
-import { Globe } from 'lucide-react';
+import { Globe } from '@/components/icons';
 
 const LANGUAGES = [
     { code: 'en', name: 'English' },

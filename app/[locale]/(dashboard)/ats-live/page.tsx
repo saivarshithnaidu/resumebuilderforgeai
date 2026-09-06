@@ -13,7 +13,7 @@ import {
     Layers,
     Cpu,
     MousePointer2
-} from 'lucide-react';
+} from '@/components/icons';
 import { useParams } from 'next/navigation';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';

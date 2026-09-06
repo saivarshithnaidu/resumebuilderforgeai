@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Wand2, Loader2, X, Download, Save, FileText, CheckCircle } from 'lucide-react';
+import { Wand2, Loader2, X, Download, Save, FileText, CheckCircle } from '@/components/icons';
 import { ResumeData } from '@/types/resume';
 import { jsPDF } from 'jspdf';
 

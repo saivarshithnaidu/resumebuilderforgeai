@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2, Layout, Wand2} from 'lucide-react';
+import { CheckCircle2, Layout, Wand2} from '@/components/icons';
 
 export default function PlatformOverview() {
   const forges = [

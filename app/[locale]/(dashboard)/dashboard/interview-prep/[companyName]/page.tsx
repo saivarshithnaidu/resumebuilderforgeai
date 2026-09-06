@@ -7,7 +7,7 @@ import {
     Zap, ShieldCheck, ChevronRight,
     Users, HelpCircle, ArrowRight,
     Trophy, Share2, Loader2, Briefcase
-} from 'lucide-react';
+} from '@/components/icons';
 import { motion, AnimatePresence } from 'framer-motion';
 import { QuestionCard } from '@/components/interview-prep/QuestionCard';
 import Link from 'next/link';

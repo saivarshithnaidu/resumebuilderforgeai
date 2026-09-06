@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic';
 ;
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Loader2, Briefcase, FileText, ChevronRight, Brain, Target, BookOpen, Zap, Mic } from 'lucide-react';
+import { Loader2, Briefcase, FileText, ChevronRight, Brain, Target, BookOpen, Zap, Mic } from '@/components/icons';
 import { useTranslation } from '@/lib/i18n/I18nProvider';
 
 const FEATURES = [

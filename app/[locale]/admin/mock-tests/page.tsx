@@ -2,7 +2,7 @@
 export const dynamic = 'force-dynamic';
 ;
 import { useState, useEffect } from 'react';
-import { CopyCheck, Loader2, Search, Calendar, User, Building, Briefcase } from 'lucide-react';
+import { CopyCheck, Loader2, Search, Calendar, User, Building, Briefcase } from '@/components/icons';
 import { formatDistanceToNow } from 'date-fns';
 import Link from 'next/link';
 

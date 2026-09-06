@@ -26,7 +26,7 @@ import {
   PanelLeft,
   Wallet,
   Network
-} from "lucide-react";
+} from "@/components/icons";
 import { cn } from "@/lib/utils";
 import { useSidebar } from "@/hooks/use-sidebar";
 

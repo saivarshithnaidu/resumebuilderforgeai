@@ -1,7 +1,7 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { CheckCircle, X } from 'lucide-react';
+import { CheckCircle, X } from '@/components/icons';
 import { useState, useEffect } from 'react';
 
 export function PaymentSuccessBanner() {

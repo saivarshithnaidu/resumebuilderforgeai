@@ -2,7 +2,7 @@
 export const dynamic = 'force-dynamic';
 
 import { useParams } from 'next/navigation';
-import { Brain, Globe, MessageSquareWarning, Wrench, ArrowRight, Code2, Building2 , Wand2 } from 'lucide-react';
+import { Brain, Globe, MessageSquareWarning, Wrench, ArrowRight, Code2, Building2 , Wand2 } from '@/components/icons';
 import Link from 'next/link';
 
 const TOOLS = [

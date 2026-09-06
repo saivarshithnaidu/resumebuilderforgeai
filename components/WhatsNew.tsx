@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fadeInUp, fadeInScale } from '@/lib/constants';
-import { ArrowRight, Calendar, ChevronRight, Zap} from 'lucide-react';
+import { ArrowRight, Calendar, ChevronRight, Zap} from '@/components/icons';
 import Link from 'next/link';
 import Image from 'next/image';
 import { BlogPost } from '@/lib/seo-service';

@@ -3,7 +3,7 @@
 import React from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { useTranslation } from '@/lib/i18n/I18nProvider';
-import { MapPin } from 'lucide-react';
+import { MapPin } from '@/components/icons';
 
 const REGIONS = [
     { code: 'in', name: 'India' },

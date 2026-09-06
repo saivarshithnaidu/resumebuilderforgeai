@@ -1,4 +1,4 @@
-import type { LucideIcon } from "lucide-react";
+import type { LucideIcon } from "@/components/icons";
 import {
   BarChart3,
   BookOpen,
@@ -23,7 +23,7 @@ import {
   Target,
   Wand2,
   Workflow,
-} from "lucide-react";
+} from "@/components/icons";
 
 export const MAIN_DOMAIN = "resumeforgeai.in";
 export const BASE_URL =

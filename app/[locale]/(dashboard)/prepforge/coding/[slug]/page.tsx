@@ -15,7 +15,7 @@ import {
     Share2,
     CheckCircle2,
     Lightbulb
-} from 'lucide-react';
+} from '@/components/icons';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';

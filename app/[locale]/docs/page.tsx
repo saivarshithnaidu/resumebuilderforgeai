@@ -10,7 +10,7 @@ import {
     ChevronRight,
     Copy,
     Check
-} from 'lucide-react';
+} from '@/components/icons';
 import { useState } from 'react';
 import { toast } from 'react-hot-toast';
 

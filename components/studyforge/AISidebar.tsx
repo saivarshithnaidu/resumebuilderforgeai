@@ -8,7 +8,7 @@ import {
     HelpCircle,
     Loader2,
     Send
-, Brain } from 'lucide-react';
+, Brain } from '@/components/icons';
 
 interface AISidebarProps {
     documentId: string;

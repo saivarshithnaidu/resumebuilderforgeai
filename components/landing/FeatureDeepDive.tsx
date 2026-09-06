@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FileText, Search, Target, Video, Rocket, Map } from "lucide-react";
+import { FileText, Search, Target, Video, Rocket, Map } from "@/components/icons";
 
 const features = [
   {

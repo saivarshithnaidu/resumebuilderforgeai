@@ -14,7 +14,7 @@ import {
     AlertCircle,
     Loader2,
     Box
-, Wand2 } from 'lucide-react';
+, Wand2 } from '@/components/icons';
 import { useParams, useRouter } from 'next/navigation';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';

@@ -12,7 +12,7 @@ import {
     Trash2,
     Search,
     BookOpen
-, Brain } from 'lucide-react';
+, Brain } from '@/components/icons';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';

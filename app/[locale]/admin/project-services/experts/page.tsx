@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { 
   ArrowLeft, Loader2, Save, RefreshCw, Users, UserPlus, Info, 
   CheckCircle2, XCircle, Code, ShieldCheck, Mail, Phone, Tag
-} from 'lucide-react';
+} from '@/components/icons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';

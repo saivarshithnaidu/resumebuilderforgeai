@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Play, Loader2, Database, Zap, Globe, Shield } from 'lucide-react';
+import { Play, Loader2, Database, Zap, Globe, Shield } from '@/components/icons';
 
 export default function JobSourcesClient({ initialStats }: { initialStats: Record<string, number> }) {
     const [stats, setStats] = useState(initialStats);

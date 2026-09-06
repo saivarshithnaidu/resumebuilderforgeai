@@ -8,7 +8,7 @@ import {
     Send, Building2, Briefcase,
     HelpCircle, AlertCircle, CheckCircle2,
     Layout, ArrowLeft, ArrowRight
-} from 'lucide-react';
+} from '@/components/icons';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ROUNDS = [

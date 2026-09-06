@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { FileText, MoreVertical, Edit2, Download, Trash2, Copy } from 'lucide-react'
+import { FileText, MoreVertical, Edit2, Download, Trash2, Copy } from '@/components/icons'
 import { formatDistanceToNow } from 'date-fns'
 import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'

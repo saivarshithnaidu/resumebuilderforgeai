@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FileText, LogOut } from 'lucide-react'
+import { FileText, LogOut } from '@/components/icons'
 import { getSession } from '@/lib/auth/jwt'
 
 export default async function Navbar() {

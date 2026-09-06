@@ -3,7 +3,7 @@ import {
     FileText,
     Briefcase, Zap, ArrowRight, Activity, Calendar,
     Layout, BrainCircuit, TrendingUp, Compass, Clock, ShieldCheck, Crown, GraduationCap, Bot
-, Wand2 } from 'lucide-react'
+, Wand2 } from '@/components/icons'
 import { createClient } from '@/lib/supabase/server'
 import { getSession } from '@/lib/auth/jwt'
 import Link from 'next/link'

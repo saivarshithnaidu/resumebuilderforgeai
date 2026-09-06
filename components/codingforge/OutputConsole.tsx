@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Terminal, CheckCircle2, XCircle, Info, Clock } from 'lucide-react';
+import { Terminal, CheckCircle2, XCircle, Info, Clock } from '@/components/icons';
 import type { ExecutionResult, TestResult } from '../../lib/code-execution';
 
 interface OutputConsoleProps {

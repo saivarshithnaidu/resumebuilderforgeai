@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic';
 
 import { useState, useEffect, Suspense } from 'react';
 import { useParams, useSearchParams } from 'next/navigation';
-import { Mic, CheckCircle, ArrowRight, RotateCcw, FileText, Target, Calendar, BarChart, TrendingUp, X, Award, Lightbulb, Clock, Layers, ShieldCheck, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
+import { Mic, CheckCircle, ArrowRight, RotateCcw, FileText, Target, Calendar, BarChart, TrendingUp, X, Award, Lightbulb, Clock, Layers, ShieldCheck, CheckCircle2, AlertCircle, Loader2 } from '@/components/icons';
 import { motion } from 'framer-motion';
 import { FeatureGate } from '@/components/pricing/FeatureGate';
 import Link from 'next/link';

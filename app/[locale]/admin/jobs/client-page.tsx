@@ -5,7 +5,7 @@ import {
     Search, MapPin, Briefcase, Trash2, 
     ExternalLink, Filter, Loader2, AlertCircle,
     ChevronLeft, ChevronRight, CheckCircle2
-} from 'lucide-react';
+} from '@/components/icons';
 
 interface Job {
     id: string;

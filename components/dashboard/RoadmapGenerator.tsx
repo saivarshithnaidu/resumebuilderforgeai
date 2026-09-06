@@ -8,7 +8,7 @@ import {
     Clock, Target, Info, BookOpen,
     ChevronRight,
     Map
-, Wand2 } from 'lucide-react';
+, Wand2 } from '@/components/icons';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';

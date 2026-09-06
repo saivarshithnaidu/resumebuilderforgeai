@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { 
   ArrowLeft, Loader2, RefreshCw, FileText, DollarSign,
   Info, CheckCircle2, ChevronRight, Mail, Download
-} from 'lucide-react';
+} from '@/components/icons';
 import { Badge } from '@/components/ui/Badge';
 
 export default function AdminInvoicesPage({ params }: { params: { locale: string } }) {

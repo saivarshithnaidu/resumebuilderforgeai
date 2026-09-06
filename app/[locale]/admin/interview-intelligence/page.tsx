@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic';
 ;
 
 import { useState, useEffect } from 'react';
-import { TrendingUp, Loader2, Search, User } from 'lucide-react';
+import { TrendingUp, Loader2, Search, User } from '@/components/icons';
 import { format } from 'date-fns';
 
 interface ScoreRow {

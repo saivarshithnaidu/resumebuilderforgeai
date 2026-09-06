@@ -1,6 +1,6 @@
 'use client';
 
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from '@/components/icons';
 import Link from 'next/link';
 import { useTranslation } from '@/lib/i18n/I18nProvider';
 import { motion } from 'framer-motion';

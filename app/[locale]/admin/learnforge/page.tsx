@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic';
 ;
 
 import { useState, useEffect } from 'react';
-import { Plus, Trash2, Video, Globe, BookOpen, ExternalLink, Loader2 , Brain } from 'lucide-react';
+import { Plus, Trash2, Video, Globe, BookOpen, ExternalLink, Loader2 , Brain } from '@/components/icons';
 
 interface VideoRecord {
     id: string;

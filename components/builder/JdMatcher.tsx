@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Loader2, Target, AlertCircle, CheckCircle2 } from 'lucide-react';
+import { Loader2, Target, AlertCircle, CheckCircle2 } from '@/components/icons';
 import { ResumeData } from '@/types/resume';
 
 interface Props {

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { CheckCircle, Clock, XCircle, Star, Save, Loader2, ListChecks, ChevronDown } from 'lucide-react';
+import { CheckCircle, Clock, XCircle, Star, Save, Loader2, ListChecks, ChevronDown } from '@/components/icons';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const STATUSES = [

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { LayoutDashboard, Home } from 'lucide-react';
+import { LayoutDashboard, Home } from '@/components/icons';
 
 export default function NotFound() {
     const [locale, setLocale] = useState('en-in');

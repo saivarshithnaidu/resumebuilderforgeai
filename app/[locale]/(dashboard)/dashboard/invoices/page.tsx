@@ -2,7 +2,7 @@
 export const dynamic = 'force-dynamic';
 
 import { useState, useEffect } from 'react';
-import { FileText, Download, Loader2, Receipt, CreditCard, Ticket, Calendar, IndianRupee } from 'lucide-react';
+import { FileText, Download, Loader2, Receipt, CreditCard, Ticket, Calendar, IndianRupee } from '@/components/icons';
 import { format } from 'date-fns';
 
 interface Invoice {

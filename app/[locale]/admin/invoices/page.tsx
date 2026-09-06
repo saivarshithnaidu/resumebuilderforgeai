@@ -6,7 +6,7 @@ import {
     Receipt, Loader2, Search, FileText, CreditCard, Ticket,
     Calendar, User, IndianRupee, MapPin, ChevronDown, ChevronUp,
     Smartphone, Mail, CheckCircle2, AlertCircle
-} from 'lucide-react';
+} from '@/components/icons';
 import { format, formatDistanceToNow } from 'date-fns';
 
 interface InvoiceRow {

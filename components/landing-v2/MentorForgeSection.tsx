@@ -9,7 +9,7 @@ import {
   BookOpen, 
   Briefcase, 
   Cpu 
-} from "lucide-react";
+} from "@/components/icons";
 
 interface AgentItem {
   id: string;

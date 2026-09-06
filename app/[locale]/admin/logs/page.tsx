@@ -2,7 +2,7 @@
 export const dynamic = 'force-dynamic';
 ;
 import { useState, useEffect } from 'react';
-import { ScrollText, Loader2, Search, Calendar, Shield } from 'lucide-react';
+import { ScrollText, Loader2, Search, Calendar, Shield } from '@/components/icons';
 import { formatDistanceToNow, format } from 'date-fns';
 
 interface AdminLog {

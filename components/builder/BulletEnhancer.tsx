@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Wand2, Loader2, AlertCircle } from 'lucide-react';
+import { Wand2, Loader2, AlertCircle } from '@/components/icons';
 
 interface Props {
     bullet: string;

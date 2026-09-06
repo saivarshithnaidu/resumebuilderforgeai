@@ -12,7 +12,7 @@ import {
     Building2, GraduationCap, Lightbulb, Wand2, Zap,
     AlertCircle, CheckCircle, X, Download, ExternalLink,
     Layout, ChevronRight, Award, Eye, EyeOff, FileText
-} from 'lucide-react';
+} from '@/components/icons';
 import Link from 'next/link';
 import { PreviewLayer } from '@/components/builder/preview/PreviewLayer';
 import { ResumeUpload } from '@/components/dashboard/resume-upload';

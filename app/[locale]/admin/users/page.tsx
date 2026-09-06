@@ -2,7 +2,7 @@
 export const dynamic = 'force-dynamic';
 ;
 import { useState, useEffect } from 'react';
-import { Ban, Loader2, Phone, User, Unlock, Infinity, ShieldCheck, Eye, X } from 'lucide-react';
+import { Ban, Loader2, Phone, User, Unlock, Infinity, ShieldCheck, Eye, X } from '@/components/icons';
 
 interface UserRow {
     id: string; email: string; phone_number: string | null;

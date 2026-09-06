@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Wand2} from 'lucide-react';
+import { ArrowRight, Wand2} from '@/components/icons';
 import { DEFAULT_LOCALE, fadeInScale, fadeInUp } from "@/lib/constants";
 
 type CTAProps = {

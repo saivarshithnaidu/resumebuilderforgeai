@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useTranslation } from '@/lib/i18n/I18nProvider';
 import { usePathname } from 'next/navigation';
-import { Briefcase, Github, Twitter, Linkedin, Shield, FileLock } from 'lucide-react';
+import { Briefcase, Github, Twitter, Linkedin, Shield, FileLock } from '@/components/icons';
 
 const INTERNAL_APP_ROOTS = new Set([
     'complete-profile',

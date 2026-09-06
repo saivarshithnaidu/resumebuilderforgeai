@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
-import { Bot, User, Rocket, MessageSquare, Code, GraduationCap, BrainCircuit, Terminal, ChevronRight, Copy, Check, FileDown, CheckCircle2, Loader2, AlertCircle, ChevronDown } from 'lucide-react';
+import { Bot, User, Rocket, MessageSquare, Code, GraduationCap, BrainCircuit, Terminal, ChevronRight, Copy, Check, FileDown, CheckCircle2, Loader2, AlertCircle, ChevronDown } from '@/components/icons';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 import { useToast } from '@/components/ui/use-toast';

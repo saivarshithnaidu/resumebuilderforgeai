@@ -6,7 +6,7 @@ import {
     LifeBuoy, Send, Loader2, CheckCircle2, AlertCircle,
     Ticket, Clock, MessageSquare, ChevronDown, ChevronUp,
     CreditCard, FileText, Bug, User, HelpCircle, ImageIcon
-} from 'lucide-react';
+} from '@/components/icons';
 import { format } from 'date-fns';
 
 const CATEGORIES = [

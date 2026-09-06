@@ -6,7 +6,7 @@ import {
     CreditCard, Loader2, Search, Calendar, User, Ticket,
     Clock, CheckCircle, ChevronDown, ChevronUp, MapPin,
     IndianRupee, Smartphone, Building2, FileText, Tag, Zap
-} from 'lucide-react';
+} from '@/components/icons';
 import { formatDistanceToNow, format } from 'date-fns';
 
 interface SubscriptionRow {

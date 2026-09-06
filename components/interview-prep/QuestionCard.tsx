@@ -1,4 +1,4 @@
-import { Shield, TrendingUp } from 'lucide-react';
+import { Shield, TrendingUp } from '@/components/icons';
 
 interface QuestionCardProps {
     question: string;

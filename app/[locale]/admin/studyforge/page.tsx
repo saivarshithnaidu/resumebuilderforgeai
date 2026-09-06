@@ -13,7 +13,7 @@ import {
     Loader2,
     ExternalLink,
     RefreshCcw
-} from 'lucide-react';
+} from '@/components/icons';
 
 interface StudyDoc {
     id: string;

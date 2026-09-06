@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useTranslation } from '@/lib/i18n/I18nProvider';
-import { X } from 'lucide-react';
+import { X } from '@/components/icons';
 
 export default function CookieBanner() {
     const { locale, region } = useTranslation();

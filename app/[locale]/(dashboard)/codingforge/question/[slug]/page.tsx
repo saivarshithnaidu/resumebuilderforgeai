@@ -16,7 +16,7 @@ import {
     ChevronLeft,
     Building2,
     Lightbulb
-} from 'lucide-react';
+} from '@/components/icons';
 import CodeEditor from '@/components/codingforge/CodeEditor';
 import OutputConsole from '@/components/codingforge/OutputConsole';
 import type { ExecutionResult } from '@/lib/code-execution';

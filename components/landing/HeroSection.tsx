@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Database, Code, Brain, Map, Search, Globe, Rocket, Wand2} from 'lucide-react';
+import { ArrowRight, Database, Code, Brain, Map, Search, Globe, Rocket, Wand2} from '@/components/icons';
 import { Button } from "@/components/ui/Button";
 
 interface HeroSectionProps {

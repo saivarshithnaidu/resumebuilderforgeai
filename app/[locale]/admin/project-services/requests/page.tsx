@@ -6,7 +6,7 @@ import {
   ArrowLeft, Loader2, RefreshCw, Search, SlidersHorizontal, 
   Trash2, UserCheck, ShieldCheck, Download, Mail, Play, 
   Clock, CheckCircle, ChevronRight, FileSpreadsheet, Eye
-} from 'lucide-react';
+} from '@/components/icons';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FileSearch, Hash, Zap, MessageSquare } from "lucide-react";
+import { FileSearch, Hash, Zap, MessageSquare } from "@/components/icons";
 
 const problems = [
   {

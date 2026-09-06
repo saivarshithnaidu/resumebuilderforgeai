@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-import { Upload, Loader2 } from 'lucide-react';
+import { Upload, Loader2 } from '@/components/icons';
 import { useDropzone } from 'react-dropzone';
 
 import { ResumeData } from '@/types/resume';

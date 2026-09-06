@@ -7,7 +7,7 @@ import {
     Search, MapPin, Briefcase, Filter,
     ChevronLeft, ChevronRight, Loader2,
     RefreshCw, AlertCircle, Globe, GraduationCap, Lock, ArrowRight
-} from 'lucide-react';
+} from '@/components/icons';
 import Link from 'next/link';
 import { PaymentSuccessBanner } from '@/components/dashboard/payment-success-banner';
 import { JobApplicationTracker } from '@/components/jobs/JobApplicationTracker';

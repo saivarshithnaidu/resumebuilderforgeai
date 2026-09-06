@@ -14,7 +14,7 @@ import {
     HelpCircle,
     Lightbulb,
     BookOpen
-, Brain } from 'lucide-react';
+, Brain } from '@/components/icons';
 import NextDynamic from 'next/dynamic';
 import Link from 'next/link';
 

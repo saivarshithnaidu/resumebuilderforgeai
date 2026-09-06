@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { BookOpen, MessageSquare, Code, Download, ChevronRight, GraduationCap , Lightbulb } from 'lucide-react';
+import { BookOpen, MessageSquare, Code, Download, ChevronRight, GraduationCap , Lightbulb } from '@/components/icons';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';

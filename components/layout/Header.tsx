@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { LogOut, Wand2 } from 'lucide-react';
+import { LogOut, Wand2 } from '@/components/icons';
 import { getSession } from '@/lib/auth/jwt';
 import { getTranslations } from '@/lib/i18n/server';
 

@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Loader2, Activity, CheckCircle, Clock } from 'lucide-react';
+import { Loader2, Activity, CheckCircle, Clock } from '@/components/icons';
 import { ResumeData } from '@/types/resume';
 
 interface Props {

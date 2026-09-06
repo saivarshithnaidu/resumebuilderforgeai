@@ -2,7 +2,7 @@
 export const dynamic = 'force-dynamic';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { Play, Clock, Loader2, MessageSquare, Zap, Target, Globe , Brain } from 'lucide-react';
+import { Play, Clock, Loader2, MessageSquare, Zap, Target, Globe , Brain } from '@/components/icons';
 import { FeatureGate } from '@/components/pricing/FeatureGate';
 
 interface VideoRecord {

@@ -19,7 +19,7 @@ import {
     MessageSquare,
     BrainCircuit,
     Bot
-} from "lucide-react";
+} from "@/components/icons";
 import { motion, AnimatePresence } from "framer-motion";
 import * as React from "react";
 

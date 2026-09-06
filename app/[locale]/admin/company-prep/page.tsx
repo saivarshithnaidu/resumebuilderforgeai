@@ -2,7 +2,7 @@
 export const dynamic = 'force-dynamic';
 ;
 import { useState, useEffect } from 'react';
-import { Mic, Loader2, Search, Calendar, User, Briefcase, Eye, Trash2, BarChart3, Target, TrendingUp, Building2 } from 'lucide-react';
+import { Mic, Loader2, Search, Calendar, User, Briefcase, Eye, Trash2, BarChart3, Target, TrendingUp, Building2 } from '@/components/icons';
 import { formatDistanceToNow, format } from 'date-fns';
 
 interface PrepData {

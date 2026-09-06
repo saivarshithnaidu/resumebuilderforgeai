@@ -1,7 +1,7 @@
 export const dynamic = 'force-dynamic';
 import { createAdminClient } from '@/lib/supabase/admin';
 import JobsMonitorClient from './client-page';
-import { Briefcase } from 'lucide-react';
+import { Briefcase } from '@/components/icons';
 
 export default async function JobsMonitorPage() {
     const supabase = createAdminClient();

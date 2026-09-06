@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Activity, Zap, Cpu, ShieldAlert, DollarSign, Database, TrendingUp, AlertTriangle } from 'lucide-react';
+import { Activity, Zap, Cpu, ShieldAlert, DollarSign, Database, TrendingUp, AlertTriangle } from '@/components/icons';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 

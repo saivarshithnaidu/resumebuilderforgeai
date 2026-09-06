@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Flame, Star, Award, ChevronRight, Zap, Loader2 } from 'lucide-react';
+import { Flame, Star, Award, ChevronRight, Zap, Loader2 } from '@/components/icons';
 
 interface StreakInfo {
     current_streak: number;

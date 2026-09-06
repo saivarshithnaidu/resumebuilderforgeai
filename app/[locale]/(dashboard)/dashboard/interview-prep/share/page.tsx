@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic';
 ;
 
 import ShareExperienceForm from '@/components/interview-prep/ShareExperienceForm';
-import { Trophy, ShieldHalf , Wand2 } from 'lucide-react';
+import { Trophy, ShieldHalf , Wand2 } from '@/components/icons';
 
 export default function ShareInterviewPage() {
     return (

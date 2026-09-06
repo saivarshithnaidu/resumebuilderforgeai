@@ -6,7 +6,7 @@ import FooterSection from '@/components/landing-v2/FooterSection';
 import { 
   Code, Cpu, FileText, Server, Smartphone, BookOpen, Layers, CheckCircle2, 
   HelpCircle, ChevronDown, Award, Users, ShieldCheck, HeartHandshake, Compass, Workflow
-} from 'lucide-react';
+} from '@/components/icons';
 import { Accordion } from '@/components/ui/Accordion';
 import { Playfair_Display, Lora } from 'next/font/google';
 

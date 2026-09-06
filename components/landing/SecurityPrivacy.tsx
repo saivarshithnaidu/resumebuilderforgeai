@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ShieldCheck, Lock, EyeOff, Server } from "lucide-react";
+import { ShieldCheck, Lock, EyeOff, Server } from "@/components/icons";
 
 const points = [
   { title: "Secure resume storage", icon: <Lock className="w-5 h-5" /> },

@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic';
 ;
 
 import { useState, useEffect } from 'react';
-import { Bell, Loader2, Search, User, MapPin, Briefcase, Calendar } from 'lucide-react';
+import { Bell, Loader2, Search, User, MapPin, Briefcase, Calendar } from '@/components/icons';
 import { format } from 'date-fns';
 
 interface AlertRow {

@@ -22,7 +22,7 @@ import {
     BookOpen,
     Code2,
     Zap
-} from 'lucide-react';
+} from '@/components/icons';
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 

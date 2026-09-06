@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import {
     Briefcase, MapPin, ExternalLink, Loader2, Info, AlertCircle, Star, RefreshCw, Globe, GraduationCap,
-    Lock, Crown, Zap, FileText} from 'lucide-react';
+    Lock, Crown, Zap, FileText} from '@/components/icons';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Editor from '@monaco-editor/react';
-import { Loader2, Zap, Lightbulb, Copy, RotateCcw } from 'lucide-react';
+import { Loader2, Zap, Lightbulb, Copy, RotateCcw } from '@/components/icons';
 import type { ExecutionResult } from '../../lib/code-execution';
 import { ForgeSoftPaywall } from '../auth/ForgeSoftPaywall';
 

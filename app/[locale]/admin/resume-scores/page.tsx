@@ -1,6 +1,6 @@
 export const dynamic = 'force-dynamic';
 import { createAdminClient } from '@/lib/supabase/admin';
-import { Activity, Star, Calendar, Target } from 'lucide-react';
+import { Activity, Star, Calendar, Target } from '@/components/icons';
 import { formatDistanceToNow } from 'date-fns';
 
 export default async function AdminResumeScoresPage() {

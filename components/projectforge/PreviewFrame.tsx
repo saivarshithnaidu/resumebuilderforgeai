@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Monitor, Layout, RefreshCw } from 'lucide-react';
+import { Monitor, Layout, RefreshCw } from '@/components/icons';
 
 interface PreviewFrameProps {
     html: string;

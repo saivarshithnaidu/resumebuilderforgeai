@@ -7,7 +7,7 @@ import {
     CheckCircle2, XCircle, Edit3, Loader2,
     Search, ShieldCheck, Building2, Briefcase,
     Layers, HelpCircle, MessageSquare
-} from 'lucide-react';
+} from '@/components/icons';
 import { formatDistanceToNow } from 'date-fns';
 import { InterviewSubmission } from '@/types/interview-prep';
 

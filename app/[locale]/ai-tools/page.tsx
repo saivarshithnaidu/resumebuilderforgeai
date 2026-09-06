@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic';
 import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, FileText, Briefcase, Code, MessageSquare, Terminal, BookOpen, Search, Zap, GraduationCap, Users , Wand2 } from 'lucide-react';
+import { ArrowRight, FileText, Briefcase, Code, MessageSquare, Terminal, BookOpen, Search, Zap, GraduationCap, Users , Wand2 } from '@/components/icons';
 
 export const metadata: Metadata = {
   title: "AI Tech Career Tools | ResumeForgeAI",

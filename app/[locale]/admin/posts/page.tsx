@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic';
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Plus, Edit, Trash2, Eye, FileText, Loader2, Upload, X, Send, CheckCircle } from 'lucide-react';
+import { Plus, Edit, Trash2, Eye, FileText, Loader2, Upload, X, Send, CheckCircle } from '@/components/icons';
 import { format } from 'date-fns';
 import * as XLSX from 'xlsx';
 

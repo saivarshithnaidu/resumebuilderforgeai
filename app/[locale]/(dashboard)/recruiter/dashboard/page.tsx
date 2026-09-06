@@ -10,7 +10,7 @@ import {
     Calendar, Briefcase,
     Star, Download, ExternalLink, ShieldCheck,
     Loader2
-} from 'lucide-react';
+} from '@/components/icons';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 

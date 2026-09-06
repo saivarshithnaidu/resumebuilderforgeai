@@ -5,7 +5,7 @@ import {
     Search, MapPin,
     ChevronLeft, ChevronRight, Loader2,
     AlertCircle, ArrowRight
-} from 'lucide-react';
+} from '@/components/icons';
 import Link from 'next/link';
 
 interface Job {

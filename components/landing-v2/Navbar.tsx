@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown, FileText, Layout, Zap } from "lucide-react";
+import { Menu, X, ChevronDown, FileText, Layout, Zap } from "@/components/icons";
 import Link from "next/link";
 
 interface NavbarProps {

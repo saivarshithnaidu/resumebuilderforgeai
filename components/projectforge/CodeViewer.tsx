@@ -11,7 +11,7 @@ import cpp_lang from 'react-syntax-highlighter/dist/esm/languages/hljs/cpp';
 import python_lang from 'react-syntax-highlighter/dist/esm/languages/hljs/python';
 import java_lang from 'react-syntax-highlighter/dist/esm/languages/hljs/java';
 import atomOneDark from 'react-syntax-highlighter/dist/esm/styles/hljs/atom-one-dark';
-import { Play, Loader2, X, Terminal, Zap } from 'lucide-react';
+import { Play, Loader2, X, Terminal, Zap } from '@/components/icons';
 import type { ExecutionResult } from '@/lib/code-execution';
 
 SyntaxHighlighter.registerLanguage('javascript', js);

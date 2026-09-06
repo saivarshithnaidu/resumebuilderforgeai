@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Check, Zap } from 'lucide-react';
+import { X, Check, Zap } from '@/components/icons';
 import { PLANS, PlanID } from '@/lib/pricing/config';
 import { useRouter, useParams } from 'next/navigation';
 

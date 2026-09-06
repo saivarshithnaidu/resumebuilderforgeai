@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { usePricing } from '@/hooks/use-pricing';
-import { Lock } from 'lucide-react';
+import { Lock } from '@/components/icons';
 import { motion } from 'framer-motion';
 import { UpgradeModal } from './UpgradeModal';
 

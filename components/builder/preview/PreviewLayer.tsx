@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ZoomIn, ZoomOut, Monitor, Phone, Download, Layout, RefreshCw } from 'lucide-react';
+import { ZoomIn, ZoomOut, Monitor, Phone, Download, Layout, RefreshCw } from '@/components/icons';
 import { ResumeData } from '@/types/resume';
 import { ResumePreview } from './ResumePreview';
 

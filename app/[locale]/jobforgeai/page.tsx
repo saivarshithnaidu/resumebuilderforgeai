@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic';
 
 import { useState, useEffect, useRef } from 'react';
 import { useRouter, useParams } from 'next/navigation';
-import { Loader2, Send, Bot, User, AlertCircle, ShieldCheck, Copy, Share2, Check, Terminal, ArrowLeft , Search } from 'lucide-react';
+import { Loader2, Send, Bot, User, AlertCircle, ShieldCheck, Copy, Share2, Check, Terminal, ArrowLeft , Search } from '@/components/icons';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from '@/lib/i18n/I18nProvider';

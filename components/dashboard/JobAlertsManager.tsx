@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import {
     Bell, Mail, Plus, X,
     CheckCircle2, Loader2, Briefcase, MapPin
-} from 'lucide-react';
+} from '@/components/icons';
 import { motion, AnimatePresence } from 'framer-motion';
 import { toast } from 'react-hot-toast';
 

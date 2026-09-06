@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import { Loader2 } from 'lucide-react';
+import { Loader2 } from '@/components/icons';
 
 // Import CSS
 import 'react-pdf/dist/Page/AnnotationLayer.css';

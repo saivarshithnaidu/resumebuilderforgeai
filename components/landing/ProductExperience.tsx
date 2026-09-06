@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { Play } from "lucide-react";
+import { Play } from "@/components/icons";
 
 export default function ProductExperience() {
   return (

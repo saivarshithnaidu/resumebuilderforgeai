@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import {
     LifeBuoy, Loader2, Search, ChevronDown, ChevronUp,
     MessageSquare, CheckCircle, Clock, Send, AlertCircle, ExternalLink
-} from 'lucide-react';
+} from '@/components/icons';
 import { format, formatDistanceToNow } from 'date-fns';
 
 interface SupportTicket {

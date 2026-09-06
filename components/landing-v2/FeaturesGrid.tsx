@@ -12,7 +12,7 @@ import {
   Lightbulb,
   Check,
   RotateCcw
-} from "lucide-react";
+} from "@/components/icons";
 
 /* ═══════════════════════════════════════════════
    Dedicated UI Demos (AutoSend Style)

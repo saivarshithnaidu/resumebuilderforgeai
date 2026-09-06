@@ -9,7 +9,7 @@ import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { Calendar, User, ArrowLeft, Share2 } from 'lucide-react';
+import { Calendar, User, ArrowLeft, Share2 } from '@/components/icons';
 import { format } from 'date-fns';
 import { Playfair_Display, Lora } from 'next/font/google';
 import FooterSection from '@/components/landing-v2/FooterSection';

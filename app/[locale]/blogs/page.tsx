@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPosts } from '@/lib/seo-service';
-import { Calendar, User, ArrowRight } from 'lucide-react';
+import { Calendar, User, ArrowRight } from '@/components/icons';
 import { format } from 'date-fns';
 import FooterSection from '@/components/landing-v2/FooterSection';
 import { Playfair_Display, Lora } from 'next/font/google';

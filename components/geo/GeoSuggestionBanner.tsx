@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
-import { X, Globe } from 'lucide-react';
+import { X, Globe } from '@/components/icons';
 
 interface GeoData {
     suggestedRegion: string | null;

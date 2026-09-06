@@ -9,7 +9,7 @@ import {
     FileText, Loader2, CheckCircle, AlertCircle,
     Download, Edit, Briefcase, Zap, Target,
     X, ChevronRight, PlusCircle
-, Wand2 } from 'lucide-react';
+, Wand2 } from '@/components/icons';
 import Link from 'next/link';
 import { ResumeData, ResumeRecord } from '@/types/resume';
 import { FeatureGate } from '@/components/pricing/FeatureGate';

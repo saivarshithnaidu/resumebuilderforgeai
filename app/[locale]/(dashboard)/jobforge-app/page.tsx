@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import { Search, MapPin, Briefcase, DollarSign, Zap, Loader2, Filter, ChevronRight, Building2 } from 'lucide-react';
+import { Search, MapPin, Briefcase, DollarSign, Zap, Loader2, Filter, ChevronRight, Building2 } from '@/components/icons';
 import { searchEngine } from '@/lib/search/mock-engine';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';

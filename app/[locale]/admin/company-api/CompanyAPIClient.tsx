@@ -15,7 +15,7 @@ import {
     CreditCard, 
     AlertTriangle,
     Lock
-} from 'lucide-react';
+} from '@/components/icons';
 
 interface CompanyKey {
     id: string;

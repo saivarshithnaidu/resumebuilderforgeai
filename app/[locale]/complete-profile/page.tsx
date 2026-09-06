@@ -8,7 +8,7 @@ import {
     UserCheck, Loader2, ChevronLeft, ChevronRight, 
     Check, Briefcase, AlertCircle, ShieldAlert, Award,
     Linkedin, Github
-} from 'lucide-react';
+} from '@/components/icons';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { ResumeUpload } from '@/components/dashboard/resume-upload';

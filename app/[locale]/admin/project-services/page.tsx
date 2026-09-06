@@ -7,7 +7,7 @@ import {
   Search, SlidersHorizontal, Loader2, ArrowLeft, RefreshCw, 
   UserPlus, DollarSign, FileUp, Send, ShieldAlert, Award, 
   Layers, Download, Plus, Settings, Users, CreditCard, Landmark, BookOpen
-} from 'lucide-react';
+} from '@/components/icons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';

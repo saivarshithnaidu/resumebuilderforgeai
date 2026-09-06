@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code, Server, Layout, ShieldCheck, Cpu, Braces, BarChart, Cloud } from "lucide-react";
+import { Code, Server, Layout, ShieldCheck, Cpu, Braces, BarChart, Cloud } from "@/components/icons";
 
 const paths = [
   { role: "Frontend Developer", icon: <Layout /> },

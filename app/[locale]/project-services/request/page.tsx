@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { 
   ArrowLeft, ArrowRight, Check, Upload, Trash2, Loader2, Sparkles, 
   FileText, ClipboardCheck, Info, CheckCircle2, ChevronRight, HelpCircle
-} from 'lucide-react';
+} from '@/components/icons';
 import Navbar from '@/components/landing-v2/Navbar';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';

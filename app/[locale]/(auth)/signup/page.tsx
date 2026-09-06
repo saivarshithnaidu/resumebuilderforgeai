@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic';
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter, useParams, useSearchParams } from 'next/navigation';
-import { UserPlus, Loader2, AlertCircle, CheckCircle2 } from 'lucide-react';
+import { UserPlus, Loader2, AlertCircle, CheckCircle2 } from '@/components/icons';
 import { OAuthButtons } from '@/components/auth/oauth-buttons';
 
 export default function SignupPage() {

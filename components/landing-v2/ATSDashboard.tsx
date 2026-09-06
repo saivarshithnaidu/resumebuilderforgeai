@@ -10,7 +10,7 @@ import {
   ArrowUp,
   TrendingUp,
   Zap,
-} from "lucide-react";
+} from "@/components/icons";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { 
   ArrowLeft, Loader2, RefreshCw, DollarSign, CheckCircle2, 
   HelpCircle, CreditCard, ExternalLink, ShieldCheck, Clock
-} from 'lucide-react';
+} from '@/components/icons';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';

@@ -1,7 +1,7 @@
 export const dynamic = 'force-dynamic';
 import { createClient } from '@/lib/supabase/server';
 import { notFound } from 'next/navigation';
-import { MapPin, Briefcase, Globe, ArrowRight, Building2, Calendar, DollarSign, ShieldCheck } from 'lucide-react';
+import { MapPin, Briefcase, Globe, ArrowRight, Building2, Calendar, DollarSign, ShieldCheck } from '@/components/icons';
 import Link from 'next/link';
 import ApplyTrackingButton from '@/components/jobs/ApplyTrackingButton';
 

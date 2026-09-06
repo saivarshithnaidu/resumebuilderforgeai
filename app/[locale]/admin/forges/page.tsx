@@ -14,7 +14,7 @@ import {
     Settings,
     Database,
     Lock
-} from 'lucide-react';
+} from '@/components/icons';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 
