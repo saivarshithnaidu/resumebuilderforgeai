@@ -61,15 +61,20 @@ export async function GET(req: Request) {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const formattedInvoices = (invoices || []).map((inv: any) => {
             const userObj = Array.isArray(inv.users) ? inv.users[0] : inv.users;
+            const numericAmount = Number(inv.amount) || 0;
             return {
                 id: inv.id,
                 invoice_number: inv.invoice_number,
                 plan_purchased: inv.plan,
-                amount: inv.amount,
+                plan: inv.plan,
+                amount: numericAmount,
+                total_amount: numericAmount,
+                total: numericAmount,
                 currency: inv.currency || 'INR',
                 status: inv.status || 'paid',
                 payment_method: inv.payment_method || 'Razorpay',
                 transaction_id: inv.razorpay_payment_id || null,
+                payment_id: inv.razorpay_payment_id || null,
                 order_id: inv.razorpay_order_id || null,
                 customer: {
                     email: userObj?.email || inv.billing_email || null,
@@ -79,19 +84,28 @@ export async function GET(req: Request) {
                     state: inv.billing_state || null,
                     country: inv.billing_country || 'IN',
                 },
+                customer_email: userObj?.email || inv.billing_email || null,
+                customer_name: userObj?.full_name || inv.billing_name || null,
                 coupon_applied: inv.coupon_code || null,
                 receipt_url: inv.invoice_url || null,
+                invoice_url: inv.invoice_url || null,
                 created_at: inv.created_at,
             };
         });
 
+        const totalAmountSum = formattedInvoices.reduce((sum: number, inv: any) => sum + (Number(inv.amount) || 0), 0);
+
         return NextResponse.json({
             success: true,
             total_count: count || 0,
+            count: count || 0,
+            total_amount: totalAmountSum,
+            total_revenue: totalAmountSum,
             page,
             limit,
             total_pages: count ? Math.ceil(count / limit) : 0,
             invoices: formattedInvoices,
+            data: formattedInvoices,
         });
 
     } catch (err: any) {

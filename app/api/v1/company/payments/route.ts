@@ -45,28 +45,42 @@ export async function GET(req: Request) {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const payments = (invoices || []).map((inv: any) => {
             const userObj = Array.isArray(inv.users) ? inv.users[0] : inv.users;
+            const numericAmount = Number(inv.amount) || 0;
             return {
+                id: inv.id,
                 payment_id: inv.razorpay_payment_id || inv.id,
+                transaction_id: inv.razorpay_payment_id || inv.id,
                 order_id: inv.razorpay_order_id || null,
                 invoice_number: inv.invoice_number,
-                amount: inv.amount,
+                amount: numericAmount,
+                total: numericAmount,
                 currency: inv.currency || 'INR',
                 status: inv.status || 'captured',
                 payment_gateway: inv.payment_method || 'Razorpay',
+                payment_method: inv.payment_method || 'Razorpay',
                 plan: inv.plan,
                 customer_email: userObj?.email || inv.billing_email || null,
                 customer_name: userObj?.full_name || null,
+                email: userObj?.email || inv.billing_email || null,
+                name: userObj?.full_name || null,
                 paid_at: inv.created_at,
+                created_at: inv.created_at,
             };
         });
+
+        const totalAmountSum = payments.reduce((sum: number, p: any) => sum + (Number(p.amount) || 0), 0);
 
         return NextResponse.json({
             success: true,
             total_count: count || 0,
+            count: count || 0,
+            total_amount: totalAmountSum,
+            total_revenue: totalAmountSum,
             page,
             limit,
             total_pages: count ? Math.ceil(count / limit) : 0,
             payments,
+            data: payments,
         });
 
     } catch (err: any) {

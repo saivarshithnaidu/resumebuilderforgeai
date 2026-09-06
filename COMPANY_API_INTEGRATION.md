@@ -125,12 +125,15 @@ Retrieves sanitized user registration records, active plans, and usage metrics.
       "id": "521e34ca-b964-418d-b42f-58d548f67c9e",
       "email": "user@example.com",
       "full_name": "Alex Smith",
+      "name": "Alex Smith",
       "role": "user",
       "subscription_plan": "PRO",
+      "plan_type": "PRO",
+      "is_pro": true,
       "plan_expiry": "2026-10-01T00:00:00.000Z",
-      "is_student": false,
       "credits_used_today": 12,
-      "registered_at": "2026-08-15T08:30:00.000Z"
+      "registered_at": "2026-08-15T08:30:00.000Z",
+      "created_at": "2026-08-15T08:30:00.000Z"
     }
   ]
 }
