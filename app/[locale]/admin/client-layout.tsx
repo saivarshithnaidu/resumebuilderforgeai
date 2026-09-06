@@ -3,7 +3,7 @@
 import { ReactNode, useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Shield, ShieldCheck, Target, Users, FileText, ScrollText, LayoutDashboard, Ticket, Menu, X, Globe, BrainCircuit, Activity, CreditCard, MessageSquareWarning, Briefcase, FileHeart, Receipt, LifeBuoy, Mic, Compass, TrendingUp, Bell, BookOpen, Video, BookOpenCheck, Bot, GraduationCap , Wand2 } from 'lucide-react';
+import { Shield, ShieldCheck, Target, Users, FileText, ScrollText, LayoutDashboard, Ticket, Menu, X, Globe, BrainCircuit, Activity, CreditCard, MessageSquareWarning, Briefcase, FileHeart, Receipt, LifeBuoy, Mic, Compass, TrendingUp, Bell, BookOpen, Video, BookOpenCheck, Bot, GraduationCap , Wand2, Key } from 'lucide-react';
 
 export default function AdminLayoutClient({ children, profile, locale }: { children: ReactNode, profile: { email: string }, locale: string }) {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -46,6 +46,7 @@ export default function AdminLayoutClient({ children, profile, locale }: { child
         { href: `/${locale}/admin/cover-letters`, label: 'Cover Letters', icon: FileHeart },
         { href: `/${locale}/admin/subscriptions`, label: 'Subscriptions', icon: CreditCard },
         { href: `/${locale}/admin/invoices`, label: 'Invoices', icon: Receipt },
+        { href: `/${locale}/admin/company-api`, label: 'Company API', icon: Key },
         { href: `/${locale}/admin/support`, label: 'Support Tickets', icon: LifeBuoy },
         { href: `/${locale}/admin/coupons`, label: 'Coupons', icon: Ticket },
         { href: `/${locale}/admin/codingforge`, label: 'CodingForge AI', icon: BrainCircuit },
